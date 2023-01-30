@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Imagem dinamica</h1>
+    <p>tente abrir esse site em varios dispositivos diferentes ou simplesmente diminua ou aumente o tamanho do seu navegador</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/p.png" type="image/png">
+        <source media="(max-width: 1050px )" srcset="imagens/m.png" type="image/png">
+        <img src="imagens/g.png" alt="imagem flexivel">
+    </picture>
+
+    <h1>Reproduzindo audio</h1>
+    <p>Vamos aprender a reproduzir audio em html5</p>
+    <audio preload="metada" controls >
+        <source src="midia/Go! Johnny Go!.mp3" type="audio/mpeg">
+        
+        <p>Infelizmente seu navegador nao consegue reproduzir audio. <a href="midia/Go! Johnny Go!.mp3">Clique aqui pra baixar o arquivo</a></p>
+    </audio>
+    
+    <audio preload="metada" controls>
+        <source src="midia/D4C.mp3" type="audio/mpeg">
+    </audio>
+</body>
+</html>
